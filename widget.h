@@ -18,6 +18,7 @@ private:
     Ui::Widget *ui;
     QTimer *timer;
     int speed = 300;
+    bool sended = false;
 private slots:
     void slot_sendfile();
     void slot_openfile();
