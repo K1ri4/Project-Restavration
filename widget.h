@@ -1,0 +1,30 @@
+#ifndef WIDGET_H
+#define WIDGET_H
+
+#include <QWidget>
+#include <QtWidgets>
+
+QT_BEGIN_NAMESPACE
+namespace Ui {class Widget;}
+QT_END_NAMESPACE
+
+class Widget : public QWidget
+{
+    Q_OBJECT
+public:
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
+private:
+    Ui::Widget *ui;
+    QTimer *timer;
+    int speed = 300;
+private slots:
+    void slot_sendfile();
+    void slot_openfile();
+    void slot_timer();
+    void slot_getcom();
+    void slot_time();
+    void slot_speed();
+    void slot_enter();
+};
+#endif // WIDGET_H
