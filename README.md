@@ -10,10 +10,10 @@
     <header>
         <nav>
             <a href="#about">О проекте</a>
-            <a href="https://drive.yadro.com/s/65jAKm8PcKLxkid" target="_blank">Документация</a>
+            <a href="" target="_blank">Документация</a>
             <a href="#technologies">Технологии</a>
             <a href="#contact">Контакты</a>
-            <a href="https://github.com/TeemUr-Check/KVART" target="_blank">GitHub проекта</a>
+            <a href="https://github.com/K1ri4/Project-Restavration" target="_blank">GitHub проекта</a>
         </nav>
     </header>
     <main>
