@@ -19,6 +19,7 @@ private:
     QTimer *timer;
     int speed = 300;
     bool sended = false;
+    QProcess *send, *get, *com;
 private slots:
     void slot_sendfile();
     void slot_openfile();
@@ -27,5 +28,9 @@ private slots:
     void slot_time();
     void slot_speed();
     void slot_enter();
+    void slot_getfile();
+    void slot_rx();
+    void slot_chat();
+    void slot_github();
 };
 #endif // WIDGET_H
