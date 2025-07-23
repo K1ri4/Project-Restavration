@@ -26,9 +26,9 @@
   <widget class="QLabel" name="standby">
    <property name="geometry">
     <rect>
-     <x>25</x>
+     <x>10</x>
      <y>100</y>
-     <width>200</width>
+     <width>325</width>
      <height>20</height>
     </rect>
    </property>
@@ -55,7 +55,7 @@
   <widget class="QPushButton" name="send_file">
    <property name="geometry">
     <rect>
-     <x>325</x>
+     <x>350</x>
      <y>100</y>
      <width>100</width>
      <height>30</height>
@@ -69,8 +69,8 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>135</y>
-     <width>400</width>
+     <y>150</y>
+     <width>200</width>
      <height>20</height>
     </rect>
    </property>
@@ -78,14 +78,14 @@
     <string>COM-порт: </string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QComboBox" name="speeds">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>160</y>
+     <x>280</x>
+     <y>180</y>
      <width>150</width>
      <height>25</height>
     </rect>
@@ -137,6 +137,11 @@
    </item>
    <item>
     <property name="text">
+     <string>74880</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>115200</string>
     </property>
    </item>
@@ -147,7 +152,17 @@
    </item>
    <item>
     <property name="text">
+     <string>250000</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>460800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>500000</string>
     </property>
    </item>
    <item>
@@ -155,12 +170,22 @@
      <string>921600</string>
     </property>
    </item>
+   <item>
+    <property name="text">
+     <string>1000000</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2000000</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>160</y>
+     <x>20</x>
+     <y>180</y>
      <width>250</width>
      <height>20</height>
     </rect>
@@ -169,15 +194,15 @@
     <string>Выбор скорости передачи (бит/с):</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="info_label">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>200</y>
-     <width>300</width>
+     <x>20</x>
+     <y>215</y>
+     <width>350</width>
      <height>20</height>
     </rect>
    </property>
@@ -185,7 +210,7 @@
     <string>Примерное время передачи составит:</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label2">
@@ -202,6 +227,45 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="get_file">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>140</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Получить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chat">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>210</y>
+     <width>40</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Чат</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="github">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>GitHub</string>
    </property>
   </widget>
  </widget>
