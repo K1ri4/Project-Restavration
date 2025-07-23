@@ -6,94 +6,9 @@
     <title>Project Restavraton</title>
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <style>
-        /* Общие стили */
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        /* Шапка сайта */
-        header {
-            background-color: #34495e;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        /* Навигационное меню */
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: #ecf0f1;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        /* Основной контент */
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        section {
-            background-color: #fff;
-            padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        section h2 {
-            margin-top: 0;
-            color: #2c3e50;
-        }
-        /* Подзаголовки и списки */
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        /* Контактная информация */
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 15px 20px;
-            margin-top: 40px;
-        }
-        /* Адаптивность */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-            main {
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
-        <table width="100%">
-            <tr>
-                <td width="99%"><center><h1>Project Restavration</h1></center></td>
-                <td><a href="index.html"><img src="icon.png" width="50" height="50"></a></td>
-            </tr>
-        </table>
         <nav>
             <a href="#about">О проекте</a>
             <a href="https://drive.yadro.com/s/65jAKm8PcKLxkid" target="_blank">Документация</a>
