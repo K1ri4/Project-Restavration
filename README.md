@@ -1,2 +1,154 @@
-# Project-Restavration
-Проект по созданию полнодуплексной связи между двумя ЭВМ при помощи удлинителя стандарта 220В, USB-TTL преобразователя CH340 и сгоревшей Arduino UNO.
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project Restavraton</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Шапка сайта */
+        header {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        /* Навигационное меню */
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        /* Основной контент */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        /* Подзаголовки и списки */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        /* Контактная информация */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 40px;
+        }
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table width="100%">
+            <tr>
+                <td width="99%"><center><h1>Project Restavration</h1></center></td>
+                <td><a href="index.html"><img src="icon.png" width="50" height="50"></a></td>
+            </tr>
+        </table>
+        <nav>
+            <a href="#about">О проекте</a>
+            <a href="https://drive.yadro.com/s/65jAKm8PcKLxkid" target="_blank">Документация</a>
+            <a href="#technologies">Технологии</a>
+            <a href="#contact">Контакты</a>
+            <a href="https://github.com/TeemUr-Check/KVART" target="_blank">GitHub проекта</a>
+        </nav>
+    </header>
+    <main>
+        <!-- О проекте -->
+        <section id="about">
+            <h2>О проекте</h2>
+            <p><b>Project Restavration</b> — это инновационный проект, направленный на создание полнодуплексной связи между двумя электронно-вычислительными машинами (ЭВМ) с использованием нестандартного подхода. В основе решения лежит передача данных через бытовую электросеть 220В с применением доступных компонентов:</p>
+            <ul>
+                <li><b>USB-TTL преобразователя CH340</b> - для обеспечения связи между компьютером и аппаратной частью;</li>
+                <li><b>Сгоревшей платы Arduino UNO</b> - в качестве "донора" разъёмов и вспомогательных компонентов;</li>
+                <li><b>Удлинителя 220В</b> - в качестве физической среды передачи сигнала.</li>
+            </ul>
+            <h3>Цель проекта</h3>
+            <p>Демонстрация возможности организации стабильной двусторонней передачи данных через бытовую электросеть с минимальными затратами, используя подручные компоненты. Проект исследует устойчивость связи, влияние помех и потенциальные применения в условиях, где стандартные методы передачи данных недоступны.</p>
+            <h3>Особенности реализации</h3>
+            <ul>
+                <li>Аппаратная часть построена на базе неисправной Arduino UNO, что позволяет сократить стоимость эксперимента.</li>
+                <li>USB-TTL преобразователь CH340 обеспечивает совместимость с большинством современных компьютеров.</li>
+                <li>Электросеть 220В используется как альтернатива специализированным линиям связи (например, Ethernet over Powerline).</li>
+            </ul>
+            <h3>Потенциальные применения</h3>
+            <ul>
+                <li>Аварийная связь в условиях повреждённой сетевой инфраструктуры.</li>
+                <li>Обмен данными между устройствами в удалённых локациях без использования Wi-Fi или проводного интернета.</li>
+                <li>Образовательные цели — изучение основ цифровой связи и работы с электросетью как средой передачи.</li>
+            </ul>
+            <p>Project Restavration сочетает в себе элементы реверс-инжиниринга, апсайклинга электроники и экспериментов в области передачи данных, предлагая нестандартный взгляд на привычные технологии.</p>
+        </section>
+        <!-- Технологии -->
+        <section id="technologies">
+            <h2>Используемые технологии</h2>
+            <ul>
+                <li>C++ - frontend программы (UI/UX)</li>
+                <li>HTML и CSS — сайт и README.</li>
+                <li>Python (pyserial) - реализация USB-TTL протокола.</li>
+                <li>GitHub — контроль версий и синхронизация данных.</li>
+            </ul>
+        </section>
+        <!-- Контакты -->
+        <section id="contact">
+            <h2>Контакты и команда разработчиков</h2>
+            <p>Если у вас есть вопросы или предложения, свяжитесь с нами в Telegram:</p>
+            <p><a href="https://t.me/KirillProtasow" target="_blank" style="color: #000000">Протасов Кирилл Константинович</a> - разработчик сайта и его дизайна, программы "связчика" на С++ и её интерфейса;</p>
+            <p><a href="https://t.me/robikinobi" target="_blank" style="color: #000000">Судаков Роберт Артёмович</a> - реализовал передачу данных по протоколу USB-TTL при помощи pyserial.</p>
+        </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer>
+        &copy; 2025 Project Restavration. Все права защищены.
+    </footer>
+</body>
+</html>
